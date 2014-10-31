@@ -1,3 +1,2 @@
-I decide to study git 
-git is  distributed version control system
-git is free software
+弧线
+期待多一度精彩
