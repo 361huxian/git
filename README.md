@@ -251,7 +251,7 @@ private boolean downloadImage() throws IOException {
 6. 根据DisplayImageOptions配置对图片进行预处理(Pre-process Bitmap)
 7. 将bitmap对象缓存到内存中
 8. 根据DisplayImageOptions配置对图片进行后处理(Post-process Bitmap)
-9. 执行DisplayBitmapTask将图片显示在相应的控件上
+9. 执行DisplayBitmapTask将图片显示在相应的控件上  
 #####2.1.7 ImageLoaderEngine.java
 执行线程LoadAndDisplayImageTask的引擎，三个Executor涉及的线程调优策略(后面会讲).
 主要是submit()方法
