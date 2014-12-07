@@ -243,7 +243,7 @@ private boolean downloadImage() throws IOException {
 其中downloader如果没有配置的话，默认是BaseImageDownloader.
 下面会分析LoadAndDisplayImageTask.java这个类,这个类信息量比较大.
 现在做一下总结:  
-1. 判断图片的内存缓存是否存在，若存在直接执行步骤8
+1. 判断图片的内存缓存是否存在，若存在直接执行步骤8  
 2. 判断图片的磁盘缓存是否存在，若存在直接执行步骤5  
 3. 从网络上下载图片  
 4. 将图片缓存在磁盘上  
