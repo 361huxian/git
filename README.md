@@ -244,13 +244,13 @@ private boolean downloadImage() throws IOException {
 下面会分析LoadAndDisplayImageTask.java这个类,这个类信息量比较大.
 现在做一下总结:  
 1. 判断图片的内存缓存是否存在，若存在直接执行步骤8
-2. 判断图片的磁盘缓存是否存在，若存在直接执行步骤5
-3. 从网络上下载图片
-4. 将图片缓存在磁盘上
-5. 将图片decode成bitmap对象
-6. 根据DisplayImageOptions配置对图片进行预处理(Pre-process Bitmap)
-7. 将bitmap对象缓存到内存中
-8. 根据DisplayImageOptions配置对图片进行后处理(Post-process Bitmap)
+2. 判断图片的磁盘缓存是否存在，若存在直接执行步骤5  
+3. 从网络上下载图片  
+4. 将图片缓存在磁盘上  
+5. 将图片decode成bitmap对象  
+6. 根据DisplayImageOptions配置对图片进行预处理(Pre-process Bitmap)  
+7. 将bitmap对象缓存到内存中  
+8. 根据DisplayImageOptions配置对图片进行后处理(Post-process Bitmap)  
 9. 执行DisplayBitmapTask将图片显示在相应的控件上  
 #####2.1.7 ImageLoaderEngine.java
 执行线程LoadAndDisplayImageTask的引擎，三个Executor涉及的线程调优策略(后面会讲).
